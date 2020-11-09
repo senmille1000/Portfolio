@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MILE　Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    	<!-- jQuery.jsの読み込み -->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+		<!-- スムーズスクロール部分の記述 -->
+			<script>
+			$(function(){
+   		// #で始まるアンカーをクリックした場合に処理
+   			$('a[href^=#]').click(function() {
+      	// スクロールの速度
+      		var speed = 400; // ミリ秒
+      	// アンカーの値取得
+      		var href= $(this).attr("href");
+      	// 移動先を取得
+      		var target = $(href == "#" || href == "" ? 'html' : href);
+      	// 移動先を数値で取得
+      		var position = target.offset().top;
+      	// スムーススクロール
+      		$('body,html').animate({scrollTop:position}, speed, 'swing');
+      		return false;
+   			});
+			});
+			</script>
+  </head>
+
+  <body>
+
+    <header>
+    	<div class="container">
+    		<div class="header-left">
+    			 <img class="logo" src="https://pbs.twimg.com/media/EmEekv_VoAYQbIC?format=png">
+    		</div>
+    		<div class="header-menu">
+    			<a class="menu" href="#menu1">Profile</a>
+    			<a class="menu" href="#menu2">Skill</a>
+    			<a class="menu" href="#menu3">Portfolio</a>
+    		</div>
+    	</div>
+    </header>
+
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>1,000 Portfolio</h1>
+        <p>I started studying on November 03, 2020.</p>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+    	<div class="container">
+    		<div class="contents">
+    			<h1 id="menu1"><span>P</span>rofile</h1>
+    				<div class="prof-img"></div>
+    				<p class="prof-txt">初めまして。千(@senmille1000)と申します。<br>
+    				ざっくりとした職歴ですが、新卒で人材営業として勤め、現在は事務職として働いています。事務職をしている中で「常に同じことの繰り返し・誰にでも出来るスキルが必要無い仕事」と言う事に自分自身危機感を覚えてプログラミング学習を始めました。progate等でプログラミングの基礎を学び、アウトプットしながらポートフォリオであるこのサイトを制作しています。</p>
+        	</div>	
+    	</div>
+    </div>
+
+<!--Skillゾーン　始-->
+    <div class="main-wrapper">
+    	<div class="container">
+			<div class="lessons">
+				<h1 id="menu1"><span>S</span>kill</h1>
+				<div class="skill">
+					<div class="skill-icon">
+						<img src="https://pbs.twimg.com/media/EmJqm10UYAMB5Mw?format=png">
+						<p>Design</p>
+					</div>
+					<p class="txt-contents">
+						HTML　☆☆☆☆☆<br>
+						CSS　☆☆☆☆☆<br>
+						Photoshop　☆☆☆☆☆<br>
+						Illustrator　☆☆☆☆☆
+					</p>
+				</div>
+
+				<div class="skill">
+					<div class="skill-icon">
+						<img src="https://pbs.twimg.com/media/EmJqm12VcAEct0a?format=png">
+						<p>OfficeWork</p>
+					</div>
+					<p class="txt-contents">
+						Word　☆☆☆☆☆<br>
+						Excel　☆☆☆☆☆<br>
+						PowerPoint　☆☆☆☆☆
+					</p>
+				</div>
+
+				<div class="skill">
+					<div class="skill-icon">
+						<img src="https://pbs.twimg.com/media/EmJqm11U4AEeHvw?format=png">
+						<p>Like</p>
+					</div>
+					<p class="txt-contents">
+						猫ちゃん　☆☆☆☆☆<br>
+						お米　☆☆☆☆☆<br>
+						二度寝　☆☆☆☆☆
+					</p>
+				</div>
+
+				<div class="skill">
+					<div class="skill-icon">
+						<img src="https://pbs.twimg.com/media/EmJqm1zVkAALtIT?format=png">
+						<p>Sports</p>
+					</div>
+					<p class="txt-contents">
+						ロード　☆☆☆☆☆<br>
+						水泳　☆☆☆☆☆<br>
+						陸上　☆☆☆☆☆
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!--Skillゾーン　終-->
+
+    <div class="main-wrapper">
+    	<div class="container">
+    		<div class="contents">
+    			<h1 id="menu3"><span>P</span>ortfolio</h1>
+    		</div>	
+    	</div>
+    </div>
+
+    <footer>
+    	<div class="container">
+    		<img src="https://pbs.twimg.com/media/EmEekv_VoAYQbIC?format=png">
+    	</div>
+    </footer>
+
+  </body>
+</html>
